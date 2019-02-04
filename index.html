@@ -3,7 +3,8 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Anton|Lobster|Oswald|Shadows+Into+Light" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -37,19 +38,33 @@
             font-family: 'Lobster', cursive;
         }
 
+        .border-box {
+            border: 3px solid black;
+            padding: .75rem;
+            margin-bottom: 1rem;
+        }
+
         .sub-title {
             font-family: 'Oswald', sans-serif;
+        }
+
+        .border-video {
+            border: 3px solid black;
+            padding: 2rem;
+            margin-top: 5rem;
         }
     </style>
 </head>
 
 <body>
     <div class="copy text-center">
-        <h1 class="mb-0 pb-0">Guru Match</h1>
+        <h1 class="border-box">guru match</h1>
         <span class="sub-title">Introduction Session</span>
     </div>
-    <video id="localVideo" autoplay muted></video>
-    <video id="remoteVideo" autoplay></video>
+    <div class="border-video">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
     <script src="script.js"></script>
 </body>
 
