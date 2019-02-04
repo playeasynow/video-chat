@@ -3,6 +3,8 @@
 
 <head>
     <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lobster|Oswald|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <style>
@@ -27,17 +29,18 @@
 
         .copy {
             position: fixed;
-            top: 10px;
+            top: 20px;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 16px;
-            color: rgba(0, 0, 0, 0.5);
+            font-size: 1.5rem;
+            color: black;
+            font-family: 'Lobster', cursive;
         }
     </style>
 </head>
 
 <body>
-    <div class="copy">Guru Match - Introduction Session</div>
+    <div class="copy text-center"><h1 class="mb-0 pb-0">Guru Match</h1><br> Introduction Session</div>
     <video id="localVideo" autoplay muted></video>
     <video id="remoteVideo" autoplay></video>
     <script src="script.js"></script>
